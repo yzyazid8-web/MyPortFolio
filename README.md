@@ -1,4 +1,4 @@
-# Portfolio Sofiane TAREB - SPA Vite
+# Portfolio  - SPA Vite
 
 Portfolio personnel en Single Page Application (SPA), construit avec Vite.
 
