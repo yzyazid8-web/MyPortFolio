@@ -1,28 +1,28 @@
 [
   {
     "title": "Master Mathématiques des données",
-    "formation": "Le Master Mathématiques des données de l'université Sorbonne Paris-Nord offre une formation pluridisciplinaire en combinant fondements et rigeurs mathématiques et ",
-    "parcours": "Le parcours propose un renforcement tant sur les aspects mathématiques et domaine des science des données. Avec des séances partagées avec le master Informatique des données decisionnel, il apporte des compétences de niveau avancé en mathématiques et informatique pour appréhender des données complexes : grande dimension, signaux uni et bi-dimensionnels, test... Une attention particulière est portée aux architectures numériques pour traiter ces données, les étudiants ont accès à des serveurs de calculs pour lancer les algorithmes présentés dans les séances de TP et pour effectuer les nombreux projets proposés.",
-    "institution": "Université Sorbonne Pars-Nord - Saint-Denis",
+    "formation": "Le Master Mathématiques des données de l'Université Sorbonne Paris-Nord offre une formation pluridisciplinaire combinant des fondements mathématiques rigoureux et des compétences avancées en science des données.",
+    "parcours": "Le parcours propose un renforcement des compétences en mathématiques appliquées et en science des données. Grâce à des enseignements partagés avec le master Informatique décisionnelle et science des données, il permet d'acquérir des connaissances avancées en mathématiques et en informatique pour appréhender des données complexes : données de grande dimension, signaux uni- et bidimensionnels, tests statistiques, etc. Une attention particulière est portée aux architectures numériques nécessaires au traitement de ces données : Sciences des données numériqus, Machine & deep learning.",
+    "institution": "Université Sorbonne Paris-Nord - Saint-Denis",
     "period": "09/2025 - Actuellement",
-    "image": "images/Rennes_2.jpeg",
+    "image": "images/uspn.png",
     "link": "https://sites-formations.univ-rennes2.fr/master-mas/",
-    "skills": ["Statistiques", "Analyse de données", "ML et DL"]
+    "skills": ["Statistiques", "Analyse de données", "Machine Learning", "Deep Learning"]
   },
   {
-    "title": "Master statistiques et probabilité appliquées",
-    "formation": " Le master Statistique et probabilité appliquées de l'USTHB est une formation visant à former des DataScientist pouvant s'adapter aux situations et problématiques en offrant un parcous ",
-    "parcours": "",
+    "title": "Master Statistiques et Probabilités appliquées",
+    "formation": "Le Master Statistiques et Probabilités appliquées de l'USTHB vise à former des spécialistes de la donnée capables de répondre à des problématiques variées en statistique, modélisation et analyse de données.",
+    "parcours": "La formation couvre les fondements théoriques des probabilités et des statistiques ainsi que leurs applications pratiques. Elle permet d'acquérir des compétences en modélisation statistique, apprentissage automatique, analyse de données et aide à la décision à travers des projets académiques et des études de cas.",
     "institution": "USTHB - Alger",
     "period": "09/2023 - 07/2025",
-    "image": "images/Clermont.jpeg",
+    "image": "images/USTHB.jpeg",
     "link": "http://www.irem.univ-bpclermont.fr/IMG/pdf/PlaquetteLicenceMIASHS2017.pdf",
-    "skills": ["Analyse", "Algèbre", "Statistiques et Probabilités", "Micro et Macroéconomie"]
+    "skills": ["Statistiques", "Probabilités", "Analyse de données", "Modélisation"]
   },
   {
-    "title": "Mathématiques et Informatique parcours Mathématiques appliquées",
-    "formation": "La Licence Rmathématique de l’USTHB est un cursus pluridisciplinaire de trois ans, conçu pour fournir aux étudiants des fondements solides en mathématique, en optimisation, en analyse statistique ainsi qu'en informatique. L’objectif principal est de une fournir une base solide pour le master tant sur les aspects mathématiques et informatique.",
-    "parcours": "",
+    "title": "Mathématiques et Informatique - Parcours Mathématiques appliquées",
+    "formation": "La Licence Mathématiques et Informatique de l'USTHB est une formation pluridisciplinaire de trois ans conçue pour fournir aux étudiants des bases solides en mathématiques, optimisation, statistique et informatique.",
+    "parcours": "La formation permet d'acquérir des compétences fondamentales en algèbre, analyse, probabilités, statistique et algorithmique. Elle vise à développer une solide maîtrise des outils théoriques et pratiques nécessaires à la poursuite d'études en master ainsi qu'à la résolution de problématiques scientifiques et techniques.",
     "institution": "USTHB - Alger",
     "period": "09/2018 - 08/2023",
     "image": "images/USTHB.jpeg",

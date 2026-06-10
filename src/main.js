@@ -3,28 +3,28 @@ import emailjs from '@emailjs/browser';
 const ROUTES = {
   '/': {
     viewId: 'view-home',
-    title: 'Sofiane TAREB | Portfolio'
+    title: 'Yazid FAREZ | Portfolio'
   },
   '/experiences': {
     viewId: 'view-experiences',
-    title: 'Mes Experiences | Sofiane TAREB'
+    title: 'Mes Experiences | Yazid FAREZ'
   },
   '/education': {
     viewId: 'view-education',
-    title: 'Mon Education | Sofiane TAREB'
+    title: 'Mon Education | Yazid FAREZ'
   },
   '/projects': {
     viewId: 'view-projects',
-    title: 'Mes Projets | Sofiane TAREB'
+    title: 'Mes Projets | Yazid FAREZ'
   },
   '/contact': {
     viewId: 'view-contact',
-    title: 'Me Contacter | Sofiane TAREB'
+    title: 'Me Contacter | Yazid FAREZ'
   }
 };
 
-const EMAIL_SERVICE_ID = 'service_rv3looo';
-const EMAIL_TEMPLATE_ID = 'template_kutkjkw';
+const EMAIL_SERVICE_ID = 'service_go0ovkb';
+const EMAIL_TEMPLATE_ID = 'template_3ur515m';
 const EMAIL_PUBLIC_KEY = import.meta.env.VITE_EMAIL_JS;
 
 const skillIcons = {

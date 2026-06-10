@@ -1,6 +1,6 @@
 [
   {
-    "title": "STAGE - R$D Data Scientist",
+    "title": "STAGE - R&D Data Scientist",
     "description": "Mise en place, implémentation et développement de méthodes changement de régime, de détection d'anomalies et d'optimisation",
     "missions": [
       "Recherche et implémentation d'algorithmes de détection d'anomalies et de points de rupture sur séries temporelles énergétiques.",
@@ -12,7 +12,7 @@
       "Restitution des résultats sous forme de marimo à destination des équipes techniques et non-techniques.",
       "Mise en place d'un tracking d'expériences MLflow : versioning des runs, registre de modèles et comparaison systématique des approches pour assurer la reproductibilité."
     ],
-    "image": "images/Rennes_métropole.jpeg",
+    "image": "images/lite.png",
     "skills": ["Python", "Snowflake", "MLflow", "GitLab", "Slack", "Notion", "Machine Learning", "Deep Learning"],
     "institution": "LITE - Paris",
     "period": "Depuis MAI. 2026",
@@ -26,11 +26,11 @@
       "Entrainement d'un réseau de neurones non supervisé pour la structuration des données, suivi d'un clustering par la méethode des K-Medoids.",
       "Création de visualisations cartographiques pour reporter les résultats."
     ],
-    "image": "images/TAConsulting.png",
-    "skills": ["R", "Excel", "Data Visualisation"],
+    "image": "images/cpa.jfif",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "Data Visualisation"],
     "institution": "Crédit Populaire d'Algérie - Algérie",
     "period": "Fev - Juin 2025",
-    "link": "https://ta-consulting.fr/"
+    "link": "https://www.cpa-bank.dz/index.php/fr/"
   },
   {
     "title": "STAGE - Data Scientist",
@@ -40,10 +40,10 @@
       " Conception et impléementation d'un modèle de prévision de la demande énergétique en période hivernale.",
       "Création de visualisations cartographiques pour reporter les résultats."
     ],
-    "image": "images/TAConsulting.png",
-    "skills": ["R", "Excel", "Data Visualisation"],
+    "image": "images/sonelgaz.jfif",
+    "skills": ["Python", "R", "Machine Learning", "Data Visualisation"],
     "institution": "SONELGAZ- Algérie",
     "period": "Juin - Sep 2024",
-    "link": "https://ta-consulting.fr/"
+    "link": "https://www.sonelgaz.dz/fr"
   }
 ]

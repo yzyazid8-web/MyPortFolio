@@ -2,33 +2,30 @@
     {
       "title": "RAG Juridique Européen",
       "description": "Ce projet propose un chatbot intelligent capable de répondre à des questions en langage naturel sur les règlements européens majeurs (RGPD, AI Act, DSA, DMA, NIS2), avec citations automatiques des sources. Modèles développé en comparant deux modèles.",
-      "image": "images/Visualisation_Bokeh.png",
-      "link": "https://github.com/TAREBSofiane/Visualisation_Bokeh",
+      "image": "images/RAG.png",
+      "link": "https://github.com/yzyazid8-web/rag-eurlex",
       "technologies": ["LangChain", "ChromaDB", "Ollama", "FastAPI", "React"],
       "category": {"id": "llm", "name": "LLM / RAG"}
     },
     {
       "title": "Détection de Fraude Bancaire",
       "description": "Pipeline ML complet de détection de fraude sur le dataset IEEE-CIS (590 000 transactions, 3,5 % de fraudes), dataset sur des données réelle. La détection se fait avec XGBoost optimisé via Optuna + une explication des résultats et facteurs influencant la décision. Déploiement full-stack avec FastAPI + React : score de risque en temps réel, seuil ajustable, historique SQLite et import batch CSV.",
-      "image": "images/Visualisation_RShiny.png",
-      "link": "https://github.com/TAREBSofiane/RShiny_Accidents_France",
+      "image": "images/fraud.png",
+      "link": "https://github.com/yzyazid8-web/fraud-detection",
       "technologies": ["Python", "XGBoost", "Optuna", "SHAP", "FastAPI", "React", "SQLite"],
       "category": {"id": "data_viz", "name": "Data Visualisation"}
     },
     {
       "title": "Simulateur Stochastique de Risque — Projet ACCORD",
       "description": "Réalisation d'un simulateur stochastique de génération d'événements. Modélise la dégradation, l'inspection et la maintenance d'équipements aéronautiques via une distribution de Weibull et un modèle de détection Beta. Optimisation des couts selon des KPI mises en place. Déployé en application interactive Streamlit.",
-      "image": "images/accord_simulator.png",
-      "link": "https://github.com/alc4ml/ProjetM2D2526/",
-      "demo": "https://projetm2d2526-m2d.streamlit.app/",
       "technologies": ["Python", "Streamlit", "NumPy", "SciPy", "Monte-Carlo", "Weibull", "MLE"],
       "category": {"id": "machine_learning", "name": "Modélisation Statistique"}
     },
     {
       "title": "Estimation des Prix Immobiliers — Île-de-France",
       "description": "Pipeline ML complet d'estimation des prix immobiliers sur le dataset DVF (Demandes de Valeurs Foncières) en Île-de-France, données officielles des transactions réelles publiées par l'État français. Modèle LightGBM optimisé via Optuna avec analyse des facteurs de prix via SHAP. Déploiement full-stack avec FastAPI + React : estimation en temps réel, carte interactive des prix par commune, historique et explications des prédictions.",
-      "image": "images/immobilier_idf.png",
-      "link": "https://github.com/YazidFAREZ/immobilier-idf",
+      "image": "images/immo.png",
+      "link": "https://github.com/yzyazid8-web/immobilier-idf",
       "technologies": ["Python", "LightGBM", "Optuna", "SHAP", "FastAPI", "React"],
       "category": {"id": "machine_learning", "name": "Machine Learning"}
     }

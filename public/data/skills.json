@@ -4,14 +4,12 @@
   {"name": "R", "icon": "bx-analyse"},
   {"name": "Machine Learning", "icon": "bx-brain"},
   {"name": "Deep Learning", "icon": "bx-brain"},
-  {"name": "GCP", "icon": "bxl-google-cloud"},
   {"name": "GitLab", "icon": "bxl-gitlab"},
   {"name": "GitHub", "icon": "bxl-github"},
   {"name": "APIs", "icon": "bx-link"},
   {"name": "Git", "icon": "bxl-git"},
   {"name": "NLP", "icon": "bx-chat"},
   {"name": "FastAPI", "icon": "bxl-python"},
-  {"name": "PySpark", "icon": "bx-bolt-circle"},
   {"name": "Excel", "icon": "bx-file"},
   {"name": "Power BI", "icon": "bx-bar-chart-square"}
 ]
