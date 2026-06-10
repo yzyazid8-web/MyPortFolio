@@ -1,35 +1,49 @@
 [
   {
-    "title": "STAGE + CDD - Data Scientist / AI Engineer",
-    "description": "Mise en place d’un agent IAG RAG capable d’exploiter des bases documentaires hétérogènes pour fournir des réponses fiables et adaptées aux besoins métiers.",
+    "title": "STAGE - R$D Data Scientist",
+    "description": "Mise en place, implémentation et développement de méthodes changement de régime, de détection d'anomalies et d'optimisation",
     "missions": [
-      "Conception et déploiement d'un agent IAG basé sur un système RAG s'appuyant sur les bases documentaires de différents services.",
-      "Exploration et structuration de bases de connaissances hétérogènes (FAQ, documents internes, tickets, etc.) en vue de leur intégration dans le système RAG.",
-      "Développement et sécurisation d'APIs robustes pour l'intégration du système RAG avec les services existants.",
-      "Implémentation de l'authentification SSO-OAuth et de la sécurisation HTTPS pour garantir la conformité et la sécurité en production.",
-      "Évaluation et optimisation des performances du modèle RAG.",
-      "Conception d'une application destinée à automatiser le traitement des documents et à centraliser la gestion des bases de connaissances.",
-      "Développement d'applications et interfaces web pour différents cas d'usages.",
-      "Pilotage du passage du POC à la production et accompagnement des équipes métier dans l'expérimentation et la validation des prototypes."
+      "Recherche et implémentation d'algorithmes de détection d'anomalies et de points de rupture sur séries temporelles énergétiques.",
+      "Comparaison d'approches univariées et multivariées sur données réelles.",
+      "Recherche bibliographique et développement d'une approche pour le tuning des paramètres de PELT",
+      "Extraction de features temporelles avancées pour améliorer la sensibilité des modèles.",
+      "Conception et industrialisation de pipelines de traitement de données énergétiques : ingestion CSV Enedis, nettoyage, normalisation et export.",
+      "Évaluation des méthodes sur métriques adaptées à l'absence de labels (silhouette score, comparaison visuelle, validation expert métier).",
+      "Restitution des résultats sous forme de marimo à destination des équipes techniques et non-techniques.",
+      "Mise en place d'un tracking d'expériences MLflow : versioning des runs, registre de modèles et comparaison systématique des approches pour assurer la reproductibilité."
     ],
     "image": "images/Rennes_métropole.jpeg",
-    "skills": ["RAG", "Python", "FastAPI", "Docker", "GitLab", "CI/CD", "SSO-OAuth", "NLP"],
-    "institution": "Rennes métropole - Rennes",
-    "period": "Depuis Fév. 2025",
-    "link": "https://metropole.rennes.fr/"
+    "skills": ["Python", "Snowflake", "MLflow", "GitLab", "Slack", "Notion", "Machine Learning", "Deep Learning"],
+    "institution": "LITE - Paris",
+    "period": "Depuis MAI. 2026",
+    "link": "https://www.lite.eco/"
   },
   {
-    "title": "STAGE - Data Analyst",
-    "description": "Stage réalisé chez TA-Consulting, consacré à l'analyse et au traitement de données dans le cadre d'un projet SFR portant sur l'étude de l'implantation des tours de réseau.",
+    "title": "STAGE - Data Scientist",
+    "description": "Stage réalisé chez le Crédit Populaire d'Algérie (CPA), consacré au developpement et mise en place d'un modèle de machine learning pour la segmentation des agences bancaires.",
     "missions": [
-      "Participation à l'acquisition, au traitement et à la structuration de données issues de différentes sources pour les rendre exploitables à des fins d'analyse.",
-      "Analyse et exploration des données à l'aide de tableaux croisés dynamiques.",
-      "Création de visualisations cartographiques pour représenter les données."
+      "Développement d'un modèle de segmentation non supervisée hiérarchique hybride basé sur Self-Organizing Maps (SOM).",
+      "Entrainement d'un réseau de neurones non supervisé pour la structuration des données, suivi d'un clustering par la méethode des K-Medoids.",
+      "Création de visualisations cartographiques pour reporter les résultats."
     ],
     "image": "images/TAConsulting.png",
     "skills": ["R", "Excel", "Data Visualisation"],
-    "institution": "TA-Consulting - IDF",
-    "period": "Déc. 2022",
+    "institution": "Crédit Populaire d'Algérie - Algérie",
+    "period": "Fev - Juin 2025",
+    "link": "https://ta-consulting.fr/"
+  },
+  {
+    "title": "STAGE - Data Scientist",
+    "description": "Stage réalisé chez SONELGAZ (Algérie), consacré au developpement et mise en place d'un modèle de machine learning pour la segmentation des agences bancaires.",
+    "missions": [
+      "Analyse exploratoire et caractérisation statistique de la consommation d'énergie à l'échelle nationale.",
+      " Conception et impléementation d'un modèle de prévision de la demande énergétique en période hivernale.",
+      "Création de visualisations cartographiques pour reporter les résultats."
+    ],
+    "image": "images/TAConsulting.png",
+    "skills": ["R", "Excel", "Data Visualisation"],
+    "institution": "SONELGAZ- Algérie",
+    "period": "Juin - Sep 2024",
     "link": "https://ta-consulting.fr/"
   }
 ]

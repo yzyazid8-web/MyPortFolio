@@ -1,32 +1,31 @@
 [
   {
-    "title": "Master MAS parcours Data Science et IA",
-    "formation": "Le Master MAS de l'université Rennes 2 offre une formation à ces approches à travers six parcours différents. À un ensemble de compétences communes (modélisation et méthodes statistiques, outils informatiques et numériques), chacun de ces parcours ajoute des compétences spécifiques dans les thèmes majeurs que sont l’intelligence artificielle, la science des données pour la biologie, l’économétrie, la santé et la statistique publique.",
-    "parcours": "Le parcours propose un renforcement sur les aspects Intelligence Artificielle de la Science des Données. Il apporte des compétences de niveau avancé en mathématiques et informatique pour appréhender des données complexes : grande dimension, signaux uni et bi-dimensionnels, images, textes… Une attention particulière est portée aux architectures numériques pour traiter ces données, les étudiants ont accès à des serveurs de calculs pour lancer les algorithmes présentés dans les séances de TP et pour effectuer les nombreux projets proposés.",
-    "institution": "Université Rennes 2 - Rennes",
-    "period": "09/2023 - 08/2025",
+    "title": "Master Mathématiques des données",
+    "formation": "Le Master Mathématiques des données de l'université Sorbonne Paris-Nord offre une formation pluridisciplinaire en combinant fondements et rigeurs mathématiques et ",
+    "parcours": "Le parcours propose un renforcement tant sur les aspects mathématiques et domaine des science des données. Avec des séances partagées avec le master Informatique des données decisionnel, il apporte des compétences de niveau avancé en mathématiques et informatique pour appréhender des données complexes : grande dimension, signaux uni et bi-dimensionnels, test... Une attention particulière est portée aux architectures numériques pour traiter ces données, les étudiants ont accès à des serveurs de calculs pour lancer les algorithmes présentés dans les séances de TP et pour effectuer les nombreux projets proposés.",
+    "institution": "Université Sorbonne Pars-Nord - Saint-Denis",
+    "period": "09/2025 - Actuellement",
     "image": "images/Rennes_2.jpeg",
     "link": "https://sites-formations.univ-rennes2.fr/master-mas/",
-    "skills": ["Statistiques", "Analyse de données", "ML et DL", "NLP", "Econométrie"]
+    "skills": ["Statistiques", "Analyse de données", "ML et DL"]
   },
   {
-    "title": "Licence MIASHS",
-    "formation": " La licence MIASHS de l'Université Clermont-Auvergne est une formation organisée sur 3 ans à dominante scientifique. Elle comporte deux axes disciplinaires principaux : maths informatique d'une part et sciences économiques et de gestion d'autre part, avec une spécialisation en contrôle de gestion, en statistiques et en bases de données.",
+    "title": "Master statistiques et probabilité appliquées",
+    "formation": " Le master Statistique et probabilité appliquées de l'USTHB est une formation visant à former des DataScientist pouvant s'adapter aux situations et problématiques en offrant un parcous ",
     "parcours": "",
-    "institution": "Université Clermont Auvergne - Clermont Ferrand",
-    "period": "09/2021 - 08/2023",
+    "institution": "USTHB - Alger",
+    "period": "09/2023 - 07/2025",
     "image": "images/Clermont.jpeg",
     "link": "http://www.irem.univ-bpclermont.fr/IMG/pdf/PlaquetteLicenceMIASHS2017.pdf",
     "skills": ["Analyse", "Algèbre", "Statistiques et Probabilités", "Micro et Macroéconomie"]
   },
   {
-    "title": "Licence Recherche Operationnelle",
-    "formation": "La Licence Recherche Opérationnelle de l’USTHB est un cursus pluridisciplinaire de trois ans, conçu pour fournir aux étudiants des fondements solides en modélisation mathématique, en optimisation et en analyse statistique. L’objectif principal est de former des spécialistes capables de résoudre des problèmes complexes d’aide à la décision et de planification dans des contextes industriels, logistiques ou informatiques",
+    "title": "Mathématiques et Informatique parcours Mathématiques appliquées",
+    "formation": "La Licence Rmathématique de l’USTHB est un cursus pluridisciplinaire de trois ans, conçu pour fournir aux étudiants des fondements solides en mathématique, en optimisation, en analyse statistique ainsi qu'en informatique. L’objectif principal est de une fournir une base solide pour le master tant sur les aspects mathématiques et informatique.",
     "parcours": "",
     "institution": "USTHB - Alger",
-    "period": "09/2017 - 08/2021",
+    "period": "09/2018 - 08/2023",
     "image": "images/USTHB.jpeg",
-    "link": "https://usthb.academia.edu/Departments/Recherche_Operationelle/Documents",
-    "skills": ["Optimisation", "Théorie des graphes", "Statistiques et Probabilités", "SI"]
+    "skills": ["Algèbre", "Optimisation", "Statistiques et Probabilités", "Algorithmique"]
   }
 ]
