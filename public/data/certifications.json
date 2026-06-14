@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Natural Language Processing in Python",
+    "issuer": "DataCamp",
+    "date": "15 mars 2026",
+    "image": "images/certifs/nlp.png",
+    "pdf": "files/certifs/nlp.pdf"
+  },
+  {
+    "title": "Developing Large Language Models",
+    "issuer": "DataCamp",
+    "date": "30 mars 2026",
+    "image": "images/certifs/llm.png",
+    "pdf": "files/certifs/llm.pdf"
+  },
+  {
+    "title": "Building Business Reports Using Power BI",
+    "issuer": "365 DataScience",
+    "date": "",
+    "image": "images/certifs/PowerBI.png",
+    "pdf": "files/certifs/powerbi.pdf"
+  }
+]

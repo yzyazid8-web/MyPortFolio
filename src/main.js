@@ -13,6 +13,10 @@ const ROUTES = {
     viewId: 'view-education',
     title: 'Mon Education | Yazid FAREZ'
   },
+  '/certifications': {
+    viewId: 'view-certifications',
+    title: 'Mes Certifications | Yazid FAREZ'
+  },
   '/projects': {
     viewId: 'view-projects',
     title: 'Mes Projets | Yazid FAREZ'
@@ -66,6 +70,7 @@ const skillIcons = {
 let educationData = [];
 let experiencesData = [];
 let projectsData = [];
+let certificationsData = [];
 let heroAnimationInitialized = false;
 let heroMouseAnimationFrame = null;
 
@@ -74,6 +79,7 @@ function normalizeRoute(pathname) {
     '/index.html': '/',
     '/experiences.html': '/experiences',
     '/education.html': '/education',
+    '/certifications.html': '/certifications',
     '/projects.html': '/projects',
     '/contact.html': '/contact'
   };
@@ -232,21 +238,24 @@ function setupRouter() {
 }
 
 async function loadAllData() {
-  const [eduResponse, expResponse, projResponse, skillsResponse] = await Promise.all([
+  const [eduResponse, expResponse, projResponse, certResponse, skillsResponse] = await Promise.all([
     fetch('/data/education.json'),
     fetch('/data/experiences.json'),
     fetch('/data/projects.json'),
+    fetch('/data/certifications.json'),
     fetch('/data/skills.json')
   ]);
 
   educationData = await eduResponse.json();
   experiencesData = await expResponse.json();
   projectsData = await projResponse.json();
+  certificationsData = await certResponse.json();
   const skillsData = await skillsResponse.json();
 
   renderEducation();
   renderExperiences();
   renderProjects();
+  renderCertifications();
   renderSkills(skillsData);
 }
 
@@ -427,6 +436,47 @@ function renderProjects() {
             <span>Voir plus</span>
             <i class="bx bx-right-arrow-alt"></i>
           </button>
+        </div>
+      </div>
+    `
+    )
+    .join('');
+}
+
+function renderCertifications() {
+  const container = document.getElementById('certifications-container');
+  if (!container) return;
+
+  container.innerHTML = certificationsData
+    .map(
+      (cert, index) => `
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="${
+        (index + 1) * 100
+      }">
+        <a href="${toAssetPath(cert.pdf)}" target="_blank" rel="noopener" class="block bg-gray-100 dark:bg-gray-800">
+          <img src="${toAssetPath(cert.image)}" alt="${cert.title}" class="w-full h-56 object-contain p-3 transition-transform duration-500 hover:scale-105">
+        </a>
+
+        <div class="p-6">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 text-xs font-medium rounded-full">${cert.issuer}</span>
+            ${
+              cert.date
+                ? `<span class="text-xs text-gray-500 dark:text-gray-400 flex items-center"><i class="bx bx-calendar mr-1"></i>${cert.date}</span>`
+                : ''
+            }
+            ${
+              cert.duration
+                ? `<span class="text-xs text-gray-500 dark:text-gray-400 flex items-center"><i class="bx bx-time mr-1"></i>${cert.duration}</span>`
+                : ''
+            }
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">${cert.title}</h3>
+
+          <a href="${toAssetPath(cert.pdf)}" target="_blank" rel="noopener" class="btn-voir-plus">
+            <span>Voir le certificat</span>
+            <i class="bx bx-link-external"></i>
+          </a>
         </div>
       </div>
     `
