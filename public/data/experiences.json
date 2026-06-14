@@ -34,7 +34,7 @@
   },
   {
     "title": "STAGE - Data Scientist",
-    "description": "Stage réalisé chez SONELGAZ (Algérie), consacré au developpement et mise en place d'un modèle de machine learning pour la segmentation des agences bancaires.",
+    "description": "Stage réalisé chez SONELGAZ (Algérie), consacré à l'analyse de la consommation énergétique nationale et au développement d'un modèle de prévision de la demande en énergie en période hivernale.",
     "missions": [
       "Analyse exploratoire et caractérisation statistique de la consommation d'énergie à l'échelle nationale.",
       " Conception et impléementation d'un modèle de prévision de la demande énergétique en période hivernale.",
