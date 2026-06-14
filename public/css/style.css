@@ -653,3 +653,50 @@ html.dark body {
 .skill-icon-container:hover .skill-name {
   transform: rotateY(180deg); /* Le texte se retourne aussi avec l'icône */
 }
+
+/* Accent dégradé sous les titres de section */
+.title-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.title-accent::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.6rem auto 0;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+}
+
+/* Halo dégradé au survol des cartes */
+.card-glow:hover {
+  box-shadow: 0 18px 40px -12px rgba(124, 58, 237, 0.45);
+}
+
+.dark .card-glow:hover {
+  box-shadow: 0 18px 45px -10px rgba(139, 92, 246, 0.55);
+}
+
+/* Respect de la préférence systeme "mouvement réduit" (accessibilité) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .skills-scroll-wrapper {
+    animation: none !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  .floating {
+    animation: none !important;
+  }
+}

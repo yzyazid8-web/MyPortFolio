@@ -292,13 +292,13 @@ function renderEducation() {
   container.innerHTML = educationData
     .map(
       (edu, index) => `
-      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="${
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl card-glow" data-aos="zoom-in" data-aos-delay="${
         (index + 1) * 100
       }">
         <div class="relative overflow-hidden h-48">
-          <img src="${toAssetPath(edu.image)}" alt="${edu.title}" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">
+          <img src="${toAssetPath(edu.image)}" alt="${edu.title}" loading="lazy" decoding="async" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">
           <div>
-            <span class="absolute top-3 right-3 px-3 py-1 bg-primary-500 text-white text-xs font-medium rounded-full">${edu.period}</span>
+            <span class="absolute top-3 right-3 px-3 py-1 bg-gradient-to-r from-primary-500 to-purple-500 text-white text-xs font-medium rounded-full">${edu.period}</span>
             <h3 class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 text-xl font-semibold">${edu.title}</h3>
           </div>
         </div>
@@ -347,13 +347,13 @@ function renderExperiences() {
   container.innerHTML = experiencesData
     .map(
       (exp, index) => `
-      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="${
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl card-glow" data-aos="zoom-in" data-aos-delay="${
         (index + 1) * 100
       }">
         <div class="relative overflow-hidden h-48">
-          <img src="${toAssetPath(exp.image)}" alt="${exp.title}" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">
+          <img src="${toAssetPath(exp.image)}" alt="${exp.title}" loading="lazy" decoding="async" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">
           <div>
-            <span class="absolute top-3 right-3 px-3 py-1 bg-primary-500 text-white text-xs font-medium rounded-full">${exp.period}</span>
+            <span class="absolute top-3 right-3 px-3 py-1 bg-gradient-to-r from-primary-500 to-purple-500 text-white text-xs font-medium rounded-full">${exp.period}</span>
             <h3 class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 text-xl font-semibold">${exp.title}</h3>
           </div>
         </div>
@@ -396,19 +396,19 @@ function renderProjects() {
   container.innerHTML = projectsData
     .map(
       (project, index) => `
-      <div class="project-card ${project.category.id} bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="${
+      <div class="project-card ${project.category.id} bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl card-glow" data-aos="zoom-in" data-aos-delay="${
         (index + 1) * 100
       }">
         <div class="relative overflow-hidden h-48">
           ${
             project.image
-              ? `<img src="${toAssetPath(project.image)}" alt="${project.title}" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">`
+              ? `<img src="${toAssetPath(project.image)}" alt="${project.title}" loading="lazy" decoding="async" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">`
               : `<div class="w-full h-48 flex items-center justify-center bg-gradient-to-br from-primary-500 to-primary-700 text-white">
                    <i class="bx bx-code-block text-6xl opacity-80"></i>
                  </div>`
           }
           <div class="absolute top-3 right-3">
-            <span class="px-3 py-1 bg-primary-500 text-white text-xs font-medium rounded-full">${project.category.name}</span>
+            <span class="px-3 py-1 bg-gradient-to-r from-primary-500 to-purple-500 text-white text-xs font-medium rounded-full">${project.category.name}</span>
           </div>
         </div>
 
@@ -450,11 +450,11 @@ function renderCertifications() {
   container.innerHTML = certificationsData
     .map(
       (cert, index) => `
-      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="${
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl card-glow" data-aos="zoom-in" data-aos-delay="${
         (index + 1) * 100
       }">
         <a href="${toAssetPath(cert.pdf)}" target="_blank" rel="noopener" class="block bg-gray-100 dark:bg-gray-800">
-          <img src="${toAssetPath(cert.image)}" alt="${cert.title}" class="w-full h-56 object-contain p-3 transition-transform duration-500 hover:scale-105">
+          <img src="${toAssetPath(cert.image)}" alt="${cert.title}" loading="lazy" decoding="async" class="w-full h-56 object-contain p-3 transition-transform duration-500 hover:scale-105">
         </a>
 
         <div class="p-6">
@@ -628,6 +628,13 @@ function closeModal() {
 
 function setupModalEvents() {
   window.closeModal = closeModal;
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+      closeMobileMenu();
+    }
+  });
 
   document.addEventListener('click', (event) => {
     const eduBtn = event.target.closest('.js-open-education-modal');
