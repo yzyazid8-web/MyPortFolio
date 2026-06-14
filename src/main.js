@@ -391,7 +391,13 @@ function renderProjects() {
         (index + 1) * 100
       }">
         <div class="relative overflow-hidden h-48">
-          <img src="${toAssetPath(project.image)}" alt="${project.title}" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">
+          ${
+            project.image
+              ? `<img src="${toAssetPath(project.image)}" alt="${project.title}" class="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110">`
+              : `<div class="w-full h-48 flex items-center justify-center bg-gradient-to-br from-primary-500 to-primary-700 text-white">
+                   <i class="bx bx-code-block text-6xl opacity-80"></i>
+                 </div>`
+          }
           <div class="absolute top-3 right-3">
             <span class="px-3 py-1 bg-primary-500 text-white text-xs font-medium rounded-full">${project.category.name}</span>
           </div>
