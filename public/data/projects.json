@@ -1,5 +1,13 @@
 [
     {
+      "title": "Transformer Encoder from Scratch — Sentiment Analysis",
+      "description": "Implémentation complète d'un Transformer Encoder en PyTorch sans nn.Transformer ni HuggingFace — Multi-Head Attention, Positional Encoding, Layer Normalization codés manuellement. Entraîné sur 20 000 critiques de films IMDb (Accuracy 86.8%, AUC-ROC 0.944) avec correction d'un biais de dataset déséquilibré, early stopping et régularisation. Visualisation interactive des cartes d'attention pour interpréter les décisions du modèle, déployée via une interface Streamlit.",
+      "image": "images/transformer.png",
+      "link": "https://github.com/yzyazid8-web/transformer-sentiment",
+      "technologies": ["PyTorch", "NumPy", "Streamlit", "Matplotlib", "Scikit-learn"],
+      "category": {"id": "deep_learning", "name": "Deep Learning"}
+    },
+    {
       "title": "RAG Juridique Européen",
       "description": "Ce projet propose un chatbot intelligent capable de répondre à des questions en langage naturel sur les règlements européens majeurs (RGPD, AI Act, DSA, DMA, NIS2), avec citations automatiques des sources. Modèles développé en comparant deux modèles.",
       "image": "images/RAG.png",
