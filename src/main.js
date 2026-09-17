@@ -553,6 +553,29 @@ function openExperienceModal(index) {
         <p class="text-gray-600 dark:text-gray-300">${exp.description}</p>
       </div>
       ${
+        exp.socle
+          ? `<div><h5 class="font-semibold text-gray-900 dark:text-white mb-2">Socle</h5><p class="text-gray-600 dark:text-gray-300">${exp.socle}</p></div>`
+          : ''
+      }
+      ${
+        exp.realisations?.length
+          ? `<div><h5 class="font-semibold text-gray-900 dark:text-white mb-3">Realisations</h5><ul class="space-y-2">${exp.realisations
+              .map(
+                (item) => `<li class="flex items-start text-gray-600 dark:text-gray-300"><i class="bx bx-check-circle text-primary-600 dark:text-primary-400 mr-2 mt-1 flex-shrink-0"></i><span>${item}</span></li>`
+              )
+              .join('')}</ul></div>`
+          : ''
+      }
+      ${
+        exp.aspects_techniques?.length
+          ? `<div><h5 class="font-semibold text-gray-900 dark:text-white mb-3">Aspects techniques</h5><ul class="space-y-2">${exp.aspects_techniques
+              .map(
+                (item) => `<li class="flex items-start text-gray-600 dark:text-gray-300"><i class="bx bx-check-circle text-primary-600 dark:text-primary-400 mr-2 mt-1 flex-shrink-0"></i><span>${item}</span></li>`
+              )
+              .join('')}</ul></div>`
+          : ''
+      }
+      ${
         exp.missions?.length
           ? `<div><h5 class="font-semibold text-gray-900 dark:text-white mb-3">Missions principales</h5><ul class="space-y-2">${exp.missions
               .map(
