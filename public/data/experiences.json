@@ -1,21 +1,29 @@
 [
   {
-    "title": "STAGE - R&D Data Scientist",
-    "description": "Mise en place, implémentation et développement de méthodes changement de régime, de détection d'anomalies et d'optimisation",
-    "missions": [
-      "Recherche et implémentation d'algorithmes de détection d'anomalies et de points de rupture sur séries temporelles énergétiques.",
-      "Comparaison d'approches univariées et multivariées sur données réelles.",
-      "Recherche bibliographique et développement d'une approche pour le tuning des paramètres de PELT",
-      "Extraction de features temporelles avancées pour améliorer la sensibilité des modèles.",
-      "Conception et industrialisation de pipelines de traitement de données énergétiques : ingestion CSV Enedis, nettoyage, normalisation et export.",
-      "Évaluation des méthodes sur métriques adaptées à l'absence de labels (silhouette score, comparaison visuelle, validation expert métier).",
-      "Restitution des résultats sous forme de marimo à destination des équipes techniques et non-techniques.",
-      "Mise en place d'un tracking d'expériences MLflow : versioning des runs, registre de modèles et comparaison systématique des approches pour assurer la reproductibilité."
-    ],
+  "title": "STAGE - R&D Data Scientist",
+  "description": "Recherche, développement et industrialisation de méthodes de détection d'anomalies, de changements de régime et d'optimisation sur séries temporelles énergétiques.",
+
+  "socle": "Recherche bibliographique et exploration comparative de plusieurs familles d'approches : déterministe, statistique, machine learning, markovienne et deep learning, pour la détection d'anomalies et de points de rupture, sur données réelles.",
+
+  "realisations": [
+    "Détection de phases mortes : un compteur électrique peut répartir la consommation sur trois phases distinctes ; il s'agit d'identifier automatiquement les phases qui ne consomment pas (« phases mortes »), à partir des courbes de charge relevées phase par phase, ce qui sert directement de levier d'économie",
+    "Détection de logements vacants : distinction automatique entre logement occupé et logement vacant (secondaire / vacance), via segmentation par détection de changements de régime puis classification des segments.",
+    "Détection de sous-consommations : repérage des jours de consommation anormalement basse par rapport au comportement habituel du site.",
+    "Automatisation et optimisation des algorithmes : calibrage automatique des paramètres (pénalité de PELT, nombre de régimes) sans réglage manuel, applicable à l'échelle d'un parc de sites.",
+    "Suivi de la dérive de consommation dans les heures de fermeture : détection de la dérive de la consommation en fermeture via modèles à états latents (HMM, Markov-Switching).",
+    "Clustering de sites : benchmark des consommations et mise en évidence des profils atypiques."
+  ],
+
+  "aspects_techniques": [
+    "Feature engineering sur séries temporelles : construction d'indicateurs métier (énergie journalière, ratios à une baseline, profils types, mesures de niveau et de platitude) pour rendre les signaux exploitables par les modèles et augmenter leur sensibilité.",
+    "Validation en l'absence de labels : génération de données synthétiques avec injection de l'objectif recherché",
+    "Tracking d'expériences MLflow : versioning des runs, registre de modèles et comparaison systématique des approches pour la reproductibilité.",
+    "Restitution sous forme de notebooks interactifs (marimo) et échanges réguliers avec les équipes métier et produit pour prioriser les leviers à fort impact."
+  ],
     "image": "images/lite.png",
     "skills": ["Python", "Snowflake", "MLflow", "GitLab", "Slack", "Notion", "Machine Learning", "Deep Learning"],
     "institution": "LITE - Paris",
-    "period": "Depuis MAI. 2026",
+    "period": "MAI 2026 - Sept. 2026",
     "link": "https://www.lite.eco/"
   },
   {
