@@ -6,6 +6,7 @@
   "socle": "Recherche bibliographique et exploration comparative de plusieurs familles d'approches : déterministe, statistique, machine learning, markovienne et deep learning, pour la détection d'anomalies et de points de rupture, sur données réelles.",
 
   "realisations": [
+    "Optimisation tarifaire (TURPE) : sélection du tarif d'acheminement et de la puissance souscrite les plus économiques à partir des courbes de charge, pour réduire la facture des sites.",
     "Détection de phases mortes : un compteur électrique peut répartir la consommation sur trois phases distinctes ; il s'agit d'identifier automatiquement les phases qui ne consomment pas (« phases mortes »), à partir des courbes de charge relevées phase par phase, ce qui sert directement de levier d'économie",
     "Détection de logements vacants : distinction automatique entre logement occupé et logement vacant (secondaire / vacance), via segmentation par détection de changements de régime puis classification des segments.",
     "Détection de sous-consommations : repérage des jours de consommation anormalement basse par rapport au comportement habituel du site.",
