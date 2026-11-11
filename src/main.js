@@ -37,6 +37,15 @@ const skillIcons = {
   Docker: 'bxl-docker',
   GitLab: 'bxl-git',
   'CI/CD': 'bx-git-branch',
+  'GitHub Actions': 'bx-git-branch',
+  Azure: 'bx-cloud-upload',
+  MLflow: 'bx-line-chart',
+  'Pydantic AI': 'bx-bot',
+  marimo: 'bx-grid-alt',
+  PyTorch: 'bx-chip',
+  XGBoost: 'bx-trending-up',
+  SHAP: 'bx-bulb',
+  Optuna: 'bx-target-lock',
   R: 'bx-code-alt',
   Excel: 'bx-spreadsheet',
   'Data Visualisation': 'bx-bar-chart-alt-2',
@@ -612,8 +621,11 @@ function openProjectModal(index) {
         </div>
       </div>
       ${
-        project.link
-          ? `<div class="pt-4"><a href="${project.link}" target="_blank" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"><i class="bx bxl-github text-2xl mr-2"></i>Voir sur GitHub</a></div>`
+        project.demo || project.link
+          ? `<div class="pt-4 flex flex-wrap gap-3">
+              ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"><i class="bx bx-globe text-xl mr-2"></i>Voir la démo</a>` : ''}
+              ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"><i class="bx bxl-github text-2xl mr-2"></i>Voir sur GitHub</a>` : ''}
+            </div>`
           : ''
       }
     </div>

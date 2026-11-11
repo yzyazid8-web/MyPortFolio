@@ -1,5 +1,14 @@
 [
     {
+      "title": "Assistant de Maintenance Prédictive — Agent IA embarqué",
+      "description": "Mon projet le plus abouti : un tableau de bord réactif (marimo) où un agent IA conversationnel répond en langage naturel sur un modèle de risque de panne de machines-outils (dataset AI4I 2020). Le moteur est un XGBoost calibré (PR-AUC 0,87 en validation croisée, scoring out-of-fold) expliqué par SHAP ; l'agent à outils (Pydantic AI) l'interroge en direct — risque, explications SHAP, scénarios what-if —, diagnostique les causes via un knowledge graph FMEA (GraphRAG), garde une mémoire épisodique des diagnostics, filtre les entrées (guardrails) et est évalué par un LLM-juge. Couche MLOps : détection de dérive, promotion champion/challenger, suivi MLflow. Industrialisation de bout en bout : image Docker autonome, CI/CD GitHub Actions (lint, typage, tests, build + smoke test) et déploiement en ligne sur Azure Container Apps.",
+      "image": "images/Agent_IA.png",
+      "link": "https://github.com/yzyazid8-web/maintenance-agent",
+      "demo": "https://maintenance-agent.politebeach-befb1bc3.francecentral.azurecontainerapps.io/",
+      "technologies": ["Python", "XGBoost", "Pydantic AI", "SHAP", "marimo", "MLflow", "Docker", "GitHub Actions", "Azure"],
+      "category": {"id": "mlops_agents", "name": "Agent IA & MLOps"}
+    },
+    {
       "title": "Transformer Encoder from Scratch — Sentiment Analysis",
       "description": "Implémentation complète d'un Transformer Encoder en PyTorch sans nn.Transformer ni HuggingFace — Multi-Head Attention, Positional Encoding, Layer Normalization codés manuellement. Entraîné sur 20 000 critiques de films IMDb (Accuracy 86.8%, AUC-ROC 0.944) avec correction d'un biais de dataset déséquilibré, early stopping et régularisation. Visualisation interactive des cartes d'attention pour interpréter les décisions du modèle, déployée via une interface Streamlit.",
       "image": "images/transformer.png",
