@@ -18,7 +18,7 @@
     },
     {
       "title": "RAG Juridique Européen",
-      "description": "Ce projet propose un chatbot intelligent capable de répondre à des questions en langage naturel sur les règlements européens majeurs (RGPD, AI Act, DSA, DMA, NIS2), avec citations automatiques des sources. Modèles développé en comparant deux modèles.",
+      "description": "Chatbot RAG (Retrieval-Augmented Generation) qui répond en langage naturel à des questions sur les grands règlements européens (RGPD, AI Act, DSA, DMA, NIS2), avec citation automatique des sources. Pipeline complet : découpage et indexation des textes réglementaires dans une base vectorielle (ChromaDB), récupération des passages pertinents, puis génération de la réponse par un LLM servi localement (Ollama) — les réponses restent ainsi ancrées dans les textes officiels. Comparaison de deux configurations de génération pour évaluer la qualité et la fidélité des réponses. Déploiement full-stack FastAPI + React.",
       "image": "images/RAG.png",
       "link": "https://github.com/yzyazid8-web/rag-eurlex",
       "technologies": ["LangChain", "ChromaDB", "Ollama", "FastAPI", "React"],
@@ -30,13 +30,7 @@
       "image": "images/fraud.png",
       "link": "https://github.com/yzyazid8-web/fraud-detection",
       "technologies": ["Python", "XGBoost", "Optuna", "SHAP", "FastAPI", "React", "SQLite"],
-      "category": {"id": "data_viz", "name": "Data Visualisation"}
-    },
-    {
-      "title": "Simulateur Stochastique de Risque — Projet ACCORD",
-      "description": "Réalisation d'un simulateur stochastique de génération d'événements. Modélise la dégradation, l'inspection et la maintenance d'équipements aéronautiques via une distribution de Weibull et un modèle de détection Beta. Optimisation des couts selon des KPI mises en place. Déployé en application interactive Streamlit.",
-      "technologies": ["Python", "Streamlit", "NumPy", "SciPy", "Monte-Carlo", "Weibull", "MLE"],
-      "category": {"id": "machine_learning", "name": "Modélisation Statistique"}
+      "category": {"id": "machine_learning", "name": "Machine Learning"}
     },
     {
       "title": "Estimation des Prix Immobiliers — Île-de-France",

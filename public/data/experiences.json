@@ -32,7 +32,7 @@
     "description": "Stage réalisé chez le Crédit Populaire d'Algérie (CPA), consacré au developpement et mise en place d'un modèle de machine learning pour la segmentation des agences bancaires.",
     "missions": [
       "Développement d'un modèle de segmentation non supervisée hiérarchique hybride basé sur Self-Organizing Maps (SOM).",
-      "Entrainement d'un réseau de neurones non supervisé pour la structuration des données, suivi d'un clustering par la méethode des K-Medoids.",
+      "Entrainement d'un réseau de neurones non supervisé pour la structuration des données, suivi d'un clustering par la méthode des K-Medoids.",
       "Création de visualisations cartographiques pour reporter les résultats."
     ],
     "image": "images/cpa.jfif",
@@ -46,7 +46,7 @@
     "description": "Stage réalisé chez SONELGAZ (Algérie), consacré à l'analyse de la consommation énergétique nationale et au développement d'un modèle de prévision de la demande en énergie en période hivernale.",
     "missions": [
       "Analyse exploratoire et caractérisation statistique de la consommation d'énergie à l'échelle nationale.",
-      " Conception et impléementation d'un modèle de prévision de la demande énergétique en période hivernale.",
+      "Conception et implémentation d'un modèle de prévision de la demande énergétique en période hivernale.",
       "Création de visualisations cartographiques pour reporter les résultats."
     ],
     "image": "images/sonelgaz.jfif",
