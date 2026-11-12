@@ -1,7 +1,15 @@
 [
     {
+      "title": "Copilote de ciblage causal — uplift & agent LLM",
+      "description": "Copilote qui répond en langage naturel à « qui contacter, avec quel e-mail, pour quel budget ? ». Il estime l'effet causal réel de chaque e-mail, client par client (uplift ; méta-learners S/T/X/DR codés à la main, et inférence causale même sans A/B test via AIPW doublement robuste), puis optimise l'allocation du budget (relaxation lagrangienne codée, avec borne d'optimalité prouvée — 1 M de clients en ~6 s). Un agent LangGraph comprend la demande, choisit lui-même ses outils pour les analyses en plusieurs étapes, demande confirmation avant toute action et explique les résultats : chaque chiffre et chaque verdict sont vérifiés avant affichage, le LLM ne calcule jamais. Industrialisé (tests pytest, MLflow, Docker, CI/CD GitHub Actions) et déployé en agent interactif sur Azure Container Apps.",
+      "link": "https://github.com/yzyazid8-web/ciblage-uplift-agents",
+      "demo": "https://yzyazid8-web.github.io/ciblage-uplift-agents/",
+      "technologies": ["Python", "LangGraph", "XGBoost", "SciPy/HiGHS", "FastAPI", "marimo", "MLflow", "Docker", "Azure"],
+      "category": {"id": "causal_uplift", "name": "Causalité & Uplift"}
+    },
+    {
       "title": "Assistant de Maintenance Prédictive — Agent IA embarqué",
-      "description": "Mon projet le plus abouti : un tableau de bord réactif (marimo) où un agent IA conversationnel répond en langage naturel sur un modèle de risque de panne de machines-outils (dataset AI4I 2020). Le moteur est un XGBoost calibré (PR-AUC 0,87 en validation croisée, scoring out-of-fold) expliqué par SHAP ; l'agent à outils (Pydantic AI) l'interroge en direct — risque, explications SHAP, scénarios what-if —, diagnostique les causes via un knowledge graph FMEA (GraphRAG), garde une mémoire épisodique des diagnostics, filtre les entrées (guardrails) et est évalué par un LLM-juge. Couche MLOps : détection de dérive, promotion champion/challenger, suivi MLflow. Industrialisation de bout en bout : image Docker autonome, CI/CD GitHub Actions (lint, typage, tests, build + smoke test) et déploiement en ligne sur Azure Container Apps.",
+      "description": "Un tableau de bord réactif (marimo) de prédiction du risque de panne de machines-outils (dataset AI4I 2020), avec un agent IA conversationnel greffé dessus. Le moteur est un XGBoost calibré (PR-AUC 0,87 en validation croisée, scoring out-of-fold) expliqué par SHAP. L'agent à outils (Pydantic AI) l'interroge en direct (risque, SHAP, what-if), diagnostique les causes via un knowledge graph FMEA (GraphRAG), garde une mémoire épisodique des diagnostics, filtre les entrées (guardrails) et est évalué par un LLM-juge. Couche MLOps : détection de dérive, promotion champion/challenger, suivi MLflow. Industrialisé de bout en bout : image Docker autonome, CI/CD GitHub Actions (lint, typage, tests, build + smoke test) et déploiement en ligne sur Azure Container Apps.",
       "image": "images/Agent_IA.png",
       "link": "https://github.com/yzyazid8-web/maintenance-agent",
       "demo": "https://maintenance-agent.politebeach-befb1bc3.francecentral.azurecontainerapps.io/",
